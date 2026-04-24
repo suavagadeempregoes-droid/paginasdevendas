@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transforme seu currículo em máquina de entrevistas com IA. Sistema A.R.T.E. validado. Score ATS 85%+. R$47 hoje.">
+    <title>Currículos Irresistíveis com IA - Passe pelo ATS e Consiga Entrevistas</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero .subheadline {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        .hero .highlight {
+            color: #fbbf24;
+            font-weight: 700;
+        }
+
+        /* CTA BUTTON */
+        .cta-button {
+            display: inline-block;
+            background: #f97316;
+            color: white;
+            padding: 20px 40px;
+            font-size: 1.3em;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4);
+            margin: 20px 0;
+        }
+
+        .cta-button:hover {
+            background: #ea580c;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(249, 115, 22, 0.5);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        /* PRICE */
+        .price-box {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #fbbf24;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 400px;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            opacity: 0.7;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        .new-price {
+            font-size: 3em;
+            font-weight: 800;
+            color: #fbbf24;
+            line-height: 1;
+        }
+
+        .price-detail {
+            font-size: 0.9em;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        /* SECTIONS */
+        section {
+            background: white;
+            padding: 60px 20px;
+            margin: 0;
+        }
+
+        section:nth-child(even) {
+            background: #f9fafb;
+        }
+
+        section h2 {
+            font-size: 2.2em;
+            color: #1a365d;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        section h3 {
+            font-size: 1.5em;
+            color: #2c5282;
+            margin: 30px 0 15px 0;
+            font-weight: 600;
+        }
+
+        section p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        /* PROBLEM SECTION */
+        .problem {
+            background: #fef2f2;
+            border-left: 4px solid #dc2626;
+        }
+
+        .problem ul {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .problem li {
+            font-size: 1.1em;
+            margin: 15px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .problem li:before {
+            content: "❌";
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        /* SOLUTION SECTION */
+        .solution {
+            background: #ecfdf5;
+            border-left: 4px solid #059669;
+        }
+
+        /* BENEFITS */
+        .benefits ul {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .benefits li {
+            font-size: 1.1em;
+            margin: 20px 0;
+            padding-left: 40px;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .benefits li:before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+            font-size: 1.3em;
+        }
+
+        /* WHAT'S INCLUDED */
+        .bonus-box {
+            background: #f0f9ff;
+            border: 2px solid #3b82f6;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+
+        .bonus-box h4 {
+            font-size: 1.3em;
+            color: #1e40af;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .bonus-box p {
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        /* GUARANTEE */
+        .guarantee {
+            background: #fef3c7;
+            border: 3px solid #fbbf24;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            margin: 40px auto;
+            max-width: 600px;
+        }
+
+        .guarantee-badge {
+            font-size: 4em;
+            margin-bottom: 15px;
+        }
+
+        .guarantee h3 {
+            color: #92400e;
+            margin-bottom: 15px;
+        }
+
+        .guarantee p {
+            color: #78350f;
+            font-size: 1.05em;
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .faq-item h4 {
+            font-size: 1.2em;
+            color: #1a365d;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .faq-item p {
+            color: #4b5563;
+            line-height: 1.7;
+        }
+
+        /* TESTIMONIAL */
+        .testimonial {
+            background: #f8fafc;
+            border-left: 4px solid #3b82f6;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        .testimonial .author {
+            font-weight: 600;
+            color: #2c5282;
+            font-style: normal;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #1a365d;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer p {
+            opacity: 0.8;
+            margin: 10px 0;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8em;
+            }
+
+            .hero .subheadline {
+                font-size: 1.1em;
+            }
+
+            .cta-button {
+                font-size: 1.1em;
+                padding: 18px 30px;
+            }
+
+            .new-price {
+                font-size: 2.5em;
+            }
+
+            section h2 {
+                font-size: 1.8em;
+            }
+
+            section {
+                padding: 40px 20px;
+            }
+        }
+
+        /* STICKY CTA */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(26, 54, 93, 0.98);
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 -4px 15px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: none;
+        }
+
+        .sticky-cta.visible {
+            display: block;
+        }
+
+        .sticky-cta .cta-button {
+            margin: 0;
+            font-size: 1em;
+            padding: 15px 30px;
+        }
+
+        /* URGENCY */
+        .urgency {
+            background: #fef2f2;
+            border: 2px solid #dc2626;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin: 30px auto;
+            max-width: 600px;
+        }
+
+        .urgency p {
+            color: #dc2626;
+            font-weight: 600;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <div class="container">
+            <h1>Pare de Enviar Currículos para o Vazio</h1>
+            <p class="subheadline">
+                Transforme seu currículo em <span class="highlight">máquina de aprovação ATS</span> 
+                e finalmente seja chamado para entrevistas — em 30 dias ou menos
+            </p>
+
+            <div class="price-box">
+                <div class="old-price">De R$ 97,00</div>
+                <div class="new-price">R$ 47</div>
+                <div class="price-detail">Acesso imediato + Garantia de 7 dias</div>
+            </div>
+
+            <a href="https://SEULINKAQUI.com" class="cta-button">
+                QUERO MEU CURRÍCULO IRRESISTÍVEL AGORA
+            </a>
+        </div>
+    </div>
+
+    <!-- PROBLEM SECTION -->
+    <section class="problem">
+        <div class="container">
+            <h2>Você Está Qualificado, Mas Ninguém Te Chama?</h2>
+            
+            <p style="font-size: 1.2em; text-align: center; margin-bottom: 30px;">
+                <strong>O problema não é você. É o robô.</strong>
+            </p>
+
+            <ul>
+                <li><strong>80 currículos enviados.</strong> 3 respostas recebidas.</li>
+                <li><strong>Vaga perfeita para seu perfil.</strong> Nem passou do filtro automático.</li>
+                <li><strong>Qualificação comprovada.</strong> Mas o sistema ATS eliminou em 2 segundos.</li>
+                <li><strong>Frustração crescente.</strong> Sensação de invisibilidade total.</li>
+            </ul>
+
+            <p style="margin-top: 30px; font-size: 1.15em;">
+                <strong>A verdade cruel:</strong> 93% dos currículos são eliminados automaticamente antes de chegarem 
+                a um humano. Não por falta de qualificação — mas por incompatibilidade técnica com o ATS 
+                (Applicant Tracking System).
+            </p>
+
+            <p style="font-size: 1.15em;">
+                <strong>O custo disso?</strong> R$ 12.000+ em salário perdido (média de 3 meses desempregado). 
+                Confiança abalada. Oportunidades que não voltam.
+            </p>
+        </div>
+    </section>
+
+    <!-- SOLUTION SECTION -->
+    <section class="solution">
+        <div class="container">
+            <h2>A Solução: Aprenda a Língua do Robô</h2>
+            
+            <p style="font-size: 1.2em; text-align: center; margin-bottom: 30px;">
+                Enquanto você escreve <em>"Trabalhei com vendas"</em>, o ATS procura por 
+                <strong>"Gestão comercial B2B com metodologia SPIN Selling e redução de CAC em 23%"</strong>.
+            </p>
+
+            <p>
+                Não é questão de inventar mentiras. É questão de <strong>traduzir verdades</strong> 
+                para a linguagem que o sistema entende.
+            </p>
+
+            <h3>Método A.R.T.E.™</h3>
+            <p>
+                O único sistema brasileiro que ensina você a criar currículos que <strong>passam pelo robô 
+                E conquistam o recrutador</strong> — usando Inteligência Artificial de forma estratégica.
+            </p>
+
+            <p style="font-size: 1.15em; background: white; padding: 20px; border-radius: 8px; margin-top: 30px;">
+                <strong>✅ A — Análise:</strong> Decodifique a vaga e descubra o que o ATS procura<br><br>
+                <strong>✅ R — Refinamento:</strong> Transforme tarefas em resultados mensuráveis<br><br>
+                <strong>✅ T — Templates:</strong> Use modelos aprovados e prompts de IA validados<br><br>
+                <strong>✅ E — Execução:</strong> Aplique o plano de 30 dias estruturado
+            </p>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://SEULINKAQUI.com" class="cta-button">
+                    QUERO DOMINAR O SISTEMA AGORA
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS SECTION -->
+    <section class="benefits">
+        <div class="container">
+            <h2>O Que Você Vai Conseguir</h2>
+            
+            <ul>
+                <li>
+                    <strong>Score ATS de 85-95%</strong> (vs. média de 15-30% sem otimização) — 
+                    seu currículo finalmente passa no filtro automático
+                </li>
+                <li>
+                    <strong>Taxa de resposta 3-5x maior</strong> — de 2-5% para 12-18% de retorno 
+                    nas suas candidaturas
+                </li>
+                <li>
+                    <strong>Customização em 15 minutos</strong> — método replicável para adaptar 
+                    currículo para cada vaga específica
+                </li>
+                <li>
+                    <strong>150+ prompts validados de IA</strong> — copy-paste no ChatGPT, Claude 
+                    ou Gemini (ferramentas gratuitas)
+                </li>
+                <li>
+                    <strong>Eliminação de erros invisíveis</strong> — checklist de 25 pontos que 
+                    matam 70% dos currículos antes da leitura
+                </li>
+                <li>
+                    <strong>Plano estruturado de 30 dias</strong> — passo a passo exato do que fazer 
+                    cada semana para recolocação
+                </li>
+                <li>
+                    <strong>Confiança técnica</strong> — você saberá exatamente por que passa ou não 
+                    em cada vaga (sem mistério)
+                </li>
+            </ul>
+
+            <p style="margin-top: 40px; font-size: 1.15em; text-align: center;">
+                <strong>Não prometemos:</strong> Vaga garantida. Mágica instantânea. Resultado sem esforço.<br><br>
+                <strong>Garantimos:</strong> O método mais atualizado do Brasil para vencer ATS + 
+                ferramentas validadas + plano executável.
+            </p>
+        </div>
+    </section>
+
+    <!-- WHAT'S INCLUDED -->
+    <section>
+        <div class="container">
+            <h2>O Que Você Recebe Hoje</h2>
+
+            <div class="bonus-box">
+                <h4>📘 eBook Completo (55+ páginas)</h4>
+                <p><strong>Método A.R.T.E.™ do zero ao avançado</strong></p>
+                <p>• Como o ATS funciona (bastidores técnicos)</p>
+                <p>• 10 erros fatais que eliminam currículos</p>
+                <p>• Sistema A.R.T.E. passo a passo</p>
+                <p>• Casos reais brasileiros (antes/depois)</p>
+                <p>• Como conquistar o recrutador humano</p>
+            </div>
+
+            <div class="bonus-box">
+                <h4>🤖 150+ Prompts de IA Validados</h4>
+                <p><strong>Copy-paste direto no ChatGPT/Claude/Gemini</strong></p>
+                <p>• 15 prompts de análise de vaga</p>
+                <p>• 40 prompts de reformulação por setor</p>
+                <p>• 20 prompts de validação técnica</p>
+                <p>• 30 prompts de customização rápida</p>
+                <p>• 25 prompts de preparação para entrevista</p>
+                <p>• Organizados por fase do processo</p>
+            </div>
+
+            <div class="bonus-box">
+                <h4>📋 Checklist ATS (25 Pontos)</h4>
+                <p><strong>Validação pré-envio — elimine 70% dos erros técnicos</strong></p>
+                <p>• Erros de formatação invisíveis</p>
+                <p>• Otimização de keywords</p>
+                <p>• Estrutura de seções</p>
+                <p>• Versão imprimível inclusa</p>
+            </div>
+
+            <div class="bonus-box">
+                <h4>📄 3 Templates de Currículo ATS-Friendly</h4>
+                <p><strong>Editáveis em Word — aprovados por recrutadores</strong></p>
+                <p>• Modelo corporativo (empresas tradicionais)</p>
+                <p>• Modelo tech (startups e tecnologia)</p>
+                <p>• Modelo executivo (cargos sênior)</p>
+            </div>
+
+            <div class="bonus-box">
+                <h4>📊 Planilha de Rastreamento de Vagas</h4>
+                <p><strong>Dashboard de métricas — acompanhe sua evolução</strong></p>
+                <p>• Taxa de resposta por setor</p>
+                <p>• Tempo médio até entrevista</p>
+                <p>• Score ATS de cada candidatura</p>
+                <p>• Automações incluídas</p>
+            </div>
+
+            <div class="bonus-box">
+                <h4>📅 Plano de Ação de 30 Dias</h4>
+                <p><strong>Exatamente o que fazer cada semana</strong></p>
+                <p>• Semana 1: Análise e setup</p>
+                <p>• Semana 2: Reformulação completa</p>
+                <p>• Semana 3: Testes e validação</p>
+                <p>• Semana 4: Execução e candidaturas</p>
+            </div>
+
+            <div class="bonus-box">
+                <h4>🎁 BÔNUS EXTRA: Atualizações 2026</h4>
+                <p><strong>Acesso vitalício a todas as atualizações</strong></p>
+                <p>• Novos prompts mensais</p>
+                <p>• Tendências ATS atualizadas</p>
+                <p>• Casos de sucesso novos</p>
+                <p>• Sem custo adicional</p>
+            </div>
+
+            <div style="text-align: center; margin: 50px 0;">
+                <p style="font-size: 1.3em; margin-bottom: 20px;">
+                    <strong>Valor Total:</strong> <span style="text-decoration: line-through; opacity: 0.6;">R$ 392</span>
+                </p>
+                <p style="font-size: 2em; color: #f97316; font-weight: 700; margin-bottom: 30px;">
+                    Hoje: R$ 47
+                </p>
+                <a href="https://SEULINKAQUI.com" class="cta-button">
+                    GARANTIR ACESSO AGORA
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section style="background: #f0f9ff;">
+        <div class="container">
+            <h2>Quem Aplicou, Conseguiu</h2>
+
+            <div class="testimonial">
+                <p>
+                    "Eu estava há 4 meses enviando currículos sem resposta. Apliquei o Método A.R.T.E., 
+                    meu score ATS subiu de 27% para 91%. Tive 3 entrevistas na primeira semana e fui 
+                    contratada em 5 semanas. Valeu cada centavo."
+                </p>
+                <p class="author">— Ana Paula, Analista de Marketing, São Paulo</p>
+            </div>
+
+            <div class="testimonial">
+                <p>
+                    "Achei que era falta de experiência. Mas era só falta de otimização técnica. 
+                    Os prompts de IA transformaram meu currículo completamente. Agora recebo pelo 
+                    menos 1 retorno a cada 5 candidaturas."
+                </p>
+                <p class="author">— Carlos Mendes, Desenvolvedor, Belo Horizonte</p>
+            </div>
+
+            <div class="testimonial">
+                <p>
+                    "Estava desempregada há 8 meses. O plano de 30 dias me deu estrutura. Segui 
+                    cada passo, customizei meu currículo com os templates, e consegui recolocação 
+                    com salário 15% maior que o anterior."
+                </p>
+                <p class="author">— Juliana Costa, Gerente Comercial, Rio de Janeiro</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GUARANTEE -->
+    <section>
+        <div class="container">
+            <div class="guarantee">
+                <div class="guarantee-badge">🛡️</div>
+                <h3>Garantia Incondicional de 7 Dias</h3>
+                <p>
+                    Baixe o material. Aplique o Método A.R.T.E. por 7 dias completos. 
+                    Se você não conseguir aumentar seu score ATS ou não achar que vale cada centavo, 
+                    basta pedir reembolso. Devolvemos 100% sem perguntas.
+                </p>
+                <p style="margin-top: 20px; font-weight: 600;">
+                    Você não arrisca nada. Todo o risco é nosso.
+                </p>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://SEULINKAQUI.com" class="cta-button">
+                    QUERO COMEÇAR AGORA SEM RISCOS
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="background: #f9fafb;">
+        <div class="container">
+            <h2>Perguntas Frequentes</h2>
+
+            <div class="faq-item">
+                <h4>❓ Funciona para qualquer área profissional?</h4>
+                <p>
+                    Sim! O Método A.R.T.E. é baseado em engenharia de ATS, que funciona para TODOS os 
+                    setores. Temos casos validados em: Tecnologia, Vendas, Marketing, Administrativo, 
+                    RH, Financeiro, Operações, Saúde, Educação e mais.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h4>❓ Preciso saber programar ou ser técnico?</h4>
+                <p>
+                    Não! Os prompts são 100% copy-paste. Você cola no ChatGPT (gratuito), ajusta seus 
+                    dados pessoais e usa. Linguagem simples para qualquer nível.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h4>❓ Quanto tempo leva para ver resultados?</h4>
+                <p>
+                    Currículo otimizado: 1 dia. Primeira candidatura customizada: dia 2. Primeiras 
+                    respostas de recrutadores: 1-2 semanas (depende do mercado). Método completo 
+                    aplicado: 30 dias.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h4>❓ Isso não é "enganar" o sistema?</h4>
+                <p>
+                    Não! Você NÃO inventa experiências. Apenas traduz o que já fez para linguagem que 
+                    ATS e recrutador valorizam. É otimização estratégica, não fabricação. 100% ético.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h4>❓ E se eu for júnior ou estiver mudando de área?</h4>
+                <p>
+                    Funciona! O sistema ensina a destacar projetos acadêmicos, cursos, voluntariado e 
+                    habilidades transferíveis. Temos casos de júnior com score ATS de 88%.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h4>❓ Posso usar em LinkedIn também?</h4>
+                <p>
+                    Sim! O eBook tem capítulo específico sobre otimização de perfil LinkedIn usando a 
+                    mesma lógica ATS. Aumenta visibilidade para recrutadores.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h4>❓ Como recebo o material?</h4>
+                <p>
+                    Acesso 100% digital e imediato. Após pagamento aprovado, você recebe login por 
+                    e-mail para área de membros. Downloads disponíveis instantaneamente.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h4>❓ Tem suporte se eu tiver dúvidas?</h4>
+                <p>
+                    Sim! Suporte por e-mail respondido em até 24h. Além disso, você entra no grupo 
+                    WhatsApp exclusivo de compradores para trocar experiências.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h4>❓ Por que tão barato? Não deveria custar mais?</h4>
+                <p>
+                    Consultoria individual custa R$ 300-500/hora. Mantemos R$ 47 para tornar acessível 
+                    ao máximo de pessoas. Nossa missão é democratizar recolocação profissional no Brasil.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section style="background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%); color: white;">
+        <div class="container">
+            <h2 style="color: white;">Duas Escolhas. Uma Decisão.</h2>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+                <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 8px;">
+                    <h3 style="color: #fbbf24; margin-bottom: 20px;">❌ Escolha 1</h3>
+                    <p>Continuar enviando currículos genéricos</p>
+                    <p>Receber silêncio como resposta</p>
+                    <p>Prolongar desemprego em 2-4 meses</p>
+                    <p>Perder R$ 12.000+ em salário</p>
+                </div>
+
+                <div style="background: rgba(251, 191, 36, 0.2); padding: 30px; border-radius: 8px; border: 2px solid #fbbf24;">
+                    <h3 style="color: #fbbf24; margin-bottom: 20px;">✅ Escolha 2</h3>
+                    <p>Dominar o sistema ATS em 30 dias</p>
+                    <p>Aumentar taxa de resposta em 3-5x</p>
+                    <p>Ser chamado para entrevistas</p>
+                    <p>Investir R$ 47 e recuperar controle</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <p style="font-size: 1.3em; margin-bottom: 30px;">
+                    Qual escolha faz mais sentido para você?
+                </p>
+
+                <div class="urgency">
+                    <p>⏰ ATENÇÃO: Preço promocional de R$ 47 válido apenas HOJE</p>
+                </div>
+
+                <a href="https://SEULINKAQUI.com" class="cta-button" style="font-size: 1.5em;">
+                    QUERO MEU CURRÍCULO IRRESISTÍVEL AGORA
+                </a>
+
+                <p style="margin-top: 30px; font-size: 0.95em; opacity: 0.9;">
+                    ✅ Acesso imediato após pagamento<br>
+                    ✅ Garantia incondicional de 7 dias<br>
+                    ✅ Pagamento 100% seguro<br>
+                    ✅ Suporte incluso
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p><strong>Currículos Irresistíveis com IA</strong></p>
+            <p>Método A.R.T.E.™ — Sistema Proprietário</p>
+            <p style="margin-top: 30px; font-size: 0.9em;">
+                © 2026 Todos os direitos reservados | 
+                <a href="#" style="color: #fbbf24; text-decoration: none;">Política de Privacidade</a> | 
+                <a href="#" style="color: #fbbf24; text-decoration: none;">Termos de Uso</a>
+            </p>
+            <p style="margin-top: 20px; font-size: 0.85em; opacity: 0.7;">
+                Este produto não garante resultados. Resultados dependem de aplicação do método, 
+                contexto de mercado e qualificação individual. ATS é marca registrada de seus 
+                respectivos proprietários.
+            </p>
+        </div>
+    </footer>
+
+    <!-- STICKY CTA (aparece ao rolar) -->
+    <div class="sticky-cta" id="stickyCta">
+        <a href="https://SEULINKAQUI.com" class="cta-button">
+            GARANTIR ACESSO POR R$ 47 →
+        </a>
+    </div>
+
+    <!-- SIMPLE JAVASCRIPT -->
+    <script>
+        // Sticky CTA aparecer após scroll
+        window.addEventListener('scroll', function() {
+            const stickyCta = document.getElementById('stickyCta');
+            if (window.scrollY > 800) {
+                stickyCta.classList.add('visible');
+            } else {
+                stickyCta.classList.remove('visible');
+            }
+        });
+
+        // Smooth scroll para links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
